@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-import client.LoginHandler;
+import client.LoginHandler_old;
 import client.MazeNetClient;
 import client.AIMain;
 import generated.MazeCom;
@@ -72,7 +72,7 @@ public class ServerListener implements Runnable {
 	private MessageResult handleMessage(MazeCom mazeComMessage) {
 		switch (mazeComMessage.getMcType()) {
 			case LOGINREPLY:
-				LoginHandler.getInstance().processLoginReply(aiMain, mazeComMessage.getLoginReplyMessage());
+				LoginHandler_old.getInstance().processLoginReply(aiMain, mazeComMessage.getLoginReplyMessage());
 				return MessageResult.OK;
 			case AWAITMOVE:
 				aiMain.setAwaitMoveMessage(mazeComMessage.getAwaitMoveMessage());

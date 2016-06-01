@@ -18,8 +18,7 @@ import server.userInterface.BetterUI;
 
 public class MazeNetClient {
 
-	/** Official team name */
-	public static final String TEAM_NAME = "Fantastic Four";
+	public static final String TEAM_NAME = "SmartChase";
 
 	private static final Lock lock = new ReentrantLock();
 	private static final Condition exitCondition = lock.newCondition();
@@ -132,7 +131,7 @@ public class MazeNetClient {
 
 	private void start() {
 		serverListenerThread.start();
-		LoginHandler.getInstance().sendLogin(connection);
+		LoginHandler_old.getInstance().sendLogin(connection);
 	}
 
 	private void forceStop() throws IOException {
