@@ -1,0 +1,1 @@
+add_library (logging Log.cpp LogManager.cpp)

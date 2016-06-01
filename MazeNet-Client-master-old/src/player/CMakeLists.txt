@@ -1,0 +1,1 @@
+add_library(player GameSituation.cpp Card.cpp Board.cpp Player.cpp IPlayerStrategy.cpp HeuristicStrategy.cpp Position.hpp MoveCalculator.cpp HeuristicSettings.hpp Move.cpp Position.cpp)

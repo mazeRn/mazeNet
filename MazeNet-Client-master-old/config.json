@@ -1,0 +1,53 @@
+{
+    "server":
+    {
+        "host": "cebu.dark-dev.com",
+        "port": "5123",
+        "timeout": "60",
+        "retry": "5"
+    },
+    "player":
+    {
+        "name": "DarkDev"
+    },
+    "log":
+    {
+        "main": "true",
+        "network": "true",
+        "heuristic": "true",
+        "verbose": "true",
+        "verbose_level": "3",
+        "level": "3"
+    },
+    "heuristic":
+    {
+        "base": {
+            "reachableFieldValue": "1",
+            "reachableTreasureValue": "10",
+            "reachableHomeValue": "10",
+            "reachableHomeCutoff": "3"
+        },
+        "position": {
+            "onTargetValue": "10000000",
+            "transitionMoveValue": "50000",
+            "transitionPossibleTreasureValue": "10",
+            "distanceBaseValue": "100",
+            "distanceFactor": "1",
+            "moveOutOfMapPenalty": "1000000"
+        },
+        "enemy": {
+            "next" : {
+                "reachableTreasureValue" : "0",
+                "reachableHomeValue" : "100000",
+                "reachableHomeCutoff" : "1",
+                "transitionMoveTreasureValue" : "200"
+            },
+            "best" : {
+                "reachableTreasureValue" : "0",
+                "reachableHomeValue" : "100000",
+                "reachableHomeCutoff" : "1",
+                "transitionMoveTreasureValue" : "100"
+            }
+        }
+    }
+}
