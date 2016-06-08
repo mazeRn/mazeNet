@@ -1,6 +1,7 @@
-package networking;
+package clientPackages.networking;
 
 import generated.ErrorType;
+
 import generated.LoginMessageType;
 import generated.MazeCom;
 import generated.MazeComType;
@@ -11,9 +12,9 @@ import java.io.IOException;
 import java.net.Socket;
 import java.net.UnknownHostException;
 
-import client.ImplementationKI;
-import client.InterfaceKI;
-import client.Player;
+import clientPackages.client.ImplementationKI;
+import clientPackages.client.InterfaceKI;
+import clientPackages.client.Player;
 
 public class Connection {
 

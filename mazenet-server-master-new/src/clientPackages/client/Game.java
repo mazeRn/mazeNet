@@ -1,9 +1,10 @@
-package client;
+package clientPackages.client;
 
 import java.io.IOException;
+
 import java.util.Scanner;
 
-import networking.Connection;
+import clientPackages.networking.Connection;
 
 
 

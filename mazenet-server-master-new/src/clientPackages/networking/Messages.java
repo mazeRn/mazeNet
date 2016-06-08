@@ -1,4 +1,4 @@
-package networking;
+package clientPackages.networking;
 
 import java.util.MissingResourceException;
 import java.util.ResourceBundle;

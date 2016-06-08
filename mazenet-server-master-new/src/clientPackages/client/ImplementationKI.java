@@ -1,6 +1,7 @@
-package client;
+package clientPackages.client;
 
 import java.util.ArrayList;
+
 import java.util.Collections;
 import java.util.List;
 

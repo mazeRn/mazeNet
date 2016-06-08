@@ -1,4 +1,4 @@
-package client;
+package clientPackages.client;
 
 import generated.AwaitMoveMessageType;
 import generated.MoveMessageType;

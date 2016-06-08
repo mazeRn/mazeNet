@@ -1,4 +1,4 @@
-package networking;
+package clientPackages.networking;
 
 import generated.MazeCom;
 
